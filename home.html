@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SAHAYAK</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"> </script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="home.js" defer></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+    }
+
+    #google_translate_element {
+      display: inline-block;
+    }
+
+    #translated-text {
+      margin-top: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div>
+
+    <!--header-->
+    <nav>
+      <div class="nav-content">
+        <div class="logo">
+          <a href="#" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">SAHAYAK</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-us">About us</a></li>
+          <li><a href="#flex-container">Services</a></li>
+          <li><a href="auth.html">Sign up</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Translator Example</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+    }
+
+    #google_translate_element {
+      display: inline-block;
+    }
+
+    #translated-text {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Google Translate Script -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- Google Translate Element Container -->
+<div id="google_translate_element"></div>
+
+<!-- Your Content to be Translated -->
+<div>
+  <p id="translated-text"></p>
+</div>
+
+<!-- Language Selector Dropdown -->
+<select onchange="changeLanguage(this.value)" >
+  <option value="en">English</option>
+  <option value="hi">Hindi</option>
+  <option value="kn">Kannada</option>
+</select>
+
+<script>
+  // Function to change the language
+  function changeLanguage(selectedLanguage) {
+    const translatedText = document.getElementById('translated-text');
+    translatedText.innerHTML = ''; // Clear the existing content
+
+    // Google Translate Element
+    const translateElement = document.querySelector('.goog-te-combo');
+    translateElement.value = selectedLanguage; // Set the selected language
+
+    // Trigger translation
+    const event = new Event('change');
+    translateElement.dispatchEvent(event);
+  }
+</script>
+
+
+
+
+
+        <!--image slider-->
+      <div class="slideshow-container" id="slideshow-container">
+        
+        <div class="mySlides fade">
+          <img
+            src="pic2.png"
+            >
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="Sahayak.png"
+            >
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+
+      <!-- abouts-us -->
+      <div class="about-us" id="about-us">
+        <h1>ABOUT US</h1><br>
+        <p>Welcome to our government portal, a digital hub dedicated to fostering the well-being of our citizens. At the
+          intersection of health, education, and agriculture, we strive to empower communities through innovative
+          schemes and initiatives. <br><br> From cutting-edge healthcare programs ensuring access to quality medical
+          services, to transformative educational endeavors paving the way for a knowledgeable society, and sustainable
+          agricultural initiatives bolstering rural prosperity <br><br>Our portal is a testament to our commitment to
+          holistic development. Explore the myriad opportunities and resources as we work together to build a healthier,
+          more educated, and agriculturally resilient nation.</p>
+        <!-- <A href="view-more.html" class="view-more-button" style="color: rgb(255,255,255);"> View more </A> -->
+      </div>
+
+
+      <!--blocks-->
+      <div class="flex-container" id="flex-container">
+        <div class="flex-box">
+          <h2>150+</h2>
+          Total schemes
+        </div>
+        <div class="flex-box">
+          <h2>50+</h2>
+          Central schemes
+        </div>
+        <div class="flex-box">
+          <h2>100+</h2>
+          State schemes
+        </div>
+      </div>
+
+
+      <!-- card-container -->
+      <div class="heading">
+        <h1>Find schemes based on category</h1>
+      </div>
+
+      <div class="card-container" id="card-container">
+        <div class="card">
+          <img src="hospital.jpg">
+          <div class="card-content">
+            <h1>HEALTH</h1>
+            <P>Commit yourself to be healthy and fit.</P>
+            <A href="healthschemes.html" class="card-button" style="color: rgb(255,255,255);"> click here</A>
+          </div>
+        </div>
+
+        <!-- <div class="card">
+      <img src="court.jpg">
+      <div class="card-content">
+        <h1>COURT</h1>
+        <P>We’re committed to your justice of court.</P>
+        <A href="" class="card-button" style="color: rgb(255,255,255);"> click here</A>
+      </div>
+    </div> -->
+
+        <div class="card">
+          <img src="education.jpg">
+          <div class="card-content">
+            <h1>EDUCATION</h1>
+            <P>Better education equals a better nation</P>
+            <A href="educationschemes.html" class="card-button" style="color: rgb(255,255,255);"> click here</A>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="women.jpg">
+          <div class="card-content">
+            <h1>WOMEN WELFARE</h1>
+            <P>One girl with courage is revolution</P>
+            <A href="" class="card-button" style="color: rgb(255,255,255);"> click here</A>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="agriculture.jpg">
+          <div class="card-content">
+            <h1>AGRICULTURE</h1>
+            <P>Harvesting Goodness, Naturally.</P>
+            <A href="" class="card-button" style="color: rgb(255,255,255);"> click here</A>
+          </div>
+        </div>
+
+        <!-- <div class="card">
+      <img src="pension.jpg">
+      <div class="card-content">
+        <h1>PENSION</h1>
+        <P>Investing in tomorrow with today’s earnings.</P>
+        <A href="" class="card-button" style="color: rgb(255,255,255);"> click here</A>
+      </div>
+    </div> -->
+      </div>
+
+      <!-- FAQ -->
+      <div class="wrapper">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq">
+          <button class="accordion">
+            What services does the government portal offer in the health sector?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Our government portal provides a range of health services, including access to healthcare programs,
+              information on preventive measures, and resources for maintaining a healthy lifestyle.
+
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <button class="accordion">
+            How can I benefit from the educational initiatives on the portal?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Explore our educational initiatives to access scholarship programs, information on educational resources,
+              and updates on innovative schemes aimed at fostering a knowledgeable society.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <button class="accordion">
+            What are the major challanges of current agriculture?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Farmers can discover a variety of agricultural schemes and resources, including sustainable farming
+              practices, access to financial support, and information on the latest advancements in agriculture.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <button class="accordion">
+            How can I apply for healthcare or educational programs through the portal?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              The portal provides a streamlined application process for healthcare and educational programs. Navigate to
+              the respective sections and follow the outlined steps to submit your application..
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <button class="accordion">
+            Are there resources for rural development and agricultural sustainability?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Yes, our portal is committed to rural prosperity. Explore resources on agricultural sustainability, rural
+              development programs, and support systems tailored to enhance agricultural practices in rural areas.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <button class="accordion">
+            HCan businesses in the health and education sectors benefit from the portal?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Absolutely. The portal offers information and support for businesses in the health and education sectors,
+              fostering collaboration and innovation to contribute to the overall development of these industries.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback">
+        <h3>Your opinion matters!</h3>
+        <A href="feedback.html" class="card-button" style="color: rgb(255,255,255);"> Feedback</A>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="footerContainer">
+          <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="footerNav">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Website Policies</a></li>
+              <li><a href="">Terms of Use</a></li>
+              <li><a href="">Help</a></li>
+              <li><a href="">Feedback</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="footerBottom">
+          <p>Copyright &copy;2023; Designed by <span class="designer"> Team code crew</span></p>
+        </div>
+      </footer>
+
+      <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+      <script>
+        window.botpressWebChat.init({
+          "composerPlaceholder": "Chat with bot",
+          "botId": "97cd35b6-75ce-4db1-8902-75f809117add",
+          "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+          "messagingUrl": "https://messaging.botpress.cloud",
+          "clientId": "97cd35b6-75ce-4db1-8902-75f809117add",
+          "webhookId": "05e6d15e-2b13-4cbd-835e-a740afbd5010",
+          "lazySocket": true,
+          "themeName": "prism",
+          "frontendVersion": "v1",
+          "useSessionStorage": true,
+          "theme": "prism",
+          "themeColor": "#2563eb"
+        });
+      </script>
+
+</body>
+
+</html>
